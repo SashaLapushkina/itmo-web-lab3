@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<script src="calc_scripts.js" > </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="5">
+                <input type="text" value="0" id="accField">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="+" onclick="getSign(this.value)">
+            </td>
+            <td>
+                <input type="button" value="-" onclick="getSign(this.value)">
+            </td>
+            <td>
+                <input type="button" value="*" onclick="getSign(this.value)">
+            </td>
+            <td>
+                <input type="button" value="/" onclick="getSign(this.value)">
+            </td>
+            <td>
+                <input type="button" value="Delete" style="width: 100%" onclick="deleteDigit()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="button" value="=" style="width: 100%" onclick="result()">
+            </td>
+            <td>
+                <input type="button" value="Clear" style="width: 100%" onclick="clearField()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" value="1" onclick="getDigit(this.value)">
+            </td>
+            <td>
+                <input type="button" value="2" onclick="getDigit(this.value)">
+            </td>
+            <td>
+                <input type="button" value="3" onclick="getDigit(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" value="4" onclick="getDigit(this.value)">
+            </td>
+            <td>
+                <input type="button" value="5" onclick="getDigit(this.value)">
+            </td>
+            <td>
+                <input type="button" value="6" onclick="getDigit(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="button" value="7" onclick="getDigit(this.value)">
+            </td>
+            <td>
+                <input type="button" value="8" onclick="getDigit(this.value)">
+            </td>
+            <td>
+                <input type="button" value="9" onclick="getDigit(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+                <input type="button" value="0" onclick="getDigit(this.value)">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
